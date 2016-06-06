@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="07P-MO-JVO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Events-->
+        <scene sceneID="wyC-8a-B8o">
+            <objects>
+                <tableViewController title="Events" id="8Kp-01-gkG" customClass="EventsTableViewController" customModule="ConferenceStreaming" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="oIU-sV-pl7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="v3L-uw-KCa">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v3L-uw-KCa" id="XDT-dj-gXS">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8Kp-01-gkG" id="TxS-B6-Qmx"/>
+                            <outlet property="delegate" destination="8Kp-01-gkG" id="qcy-oL-AFG"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="t8S-YV-tgz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pw9-Lc-aKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="-178"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="uUP-ru-Y0f">
+            <objects>
+                <viewController id="RTm-vU-3Wq" customClass="PublishEventViewController" customModule="ConferenceStreaming" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Xj-kC-ZQm"/>
+                        <viewControllerLayoutGuide type="bottom" id="yBF-NI-GWJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hLF-W1-ei0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="HPe-OL-4TE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGr-gQ-pfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="483"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Z1K-M4-dFY">
+            <objects>
+                <tabBarController id="07P-MO-JVO" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="zzt-fw-v2D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8Kp-01-gkG" kind="relationship" relationship="viewControllers" id="ktR-dR-Ygv"/>
+                        <segue destination="RTm-vU-3Wq" kind="relationship" relationship="viewControllers" id="wbd-cg-c9d"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lPK-1i-uFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-792" y="153"/>
+        </scene>
+    </scenes>
+</document>
