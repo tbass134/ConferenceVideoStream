@@ -34,10 +34,45 @@
             </objects>
             <point key="canvasLocation" x="28" y="-178"/>
         </scene>
-        <!--Item 2-->
+        <!--Item-->
+        <scene sceneID="nX4-q2-zI3">
+            <objects>
+                <viewController id="9D4-tb-obs" customClass="VideoViewController" customModule="ConferenceStreaming" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kh0-TX-NfI"/>
+                        <viewControllerLayoutGuide type="bottom" id="uCG-eS-3IJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lh7-Tp-SnL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3k-2H-uKI">
+                                <rect key="frame" x="277" y="483" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="9D4-tb-obs" eventType="touchUpInside" id="k7y-QN-8Jc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uCG-eS-3IJ" firstAttribute="top" secondItem="X3k-2H-uKI" secondAttribute="bottom" constant="38" id="jXb-oq-a3b"/>
+                            <constraint firstItem="X3k-2H-uKI" firstAttribute="centerX" secondItem="Lh7-Tp-SnL" secondAttribute="centerX" id="vce-Ch-IHb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="MkM-QD-D0I"/>
+                    <connections>
+                        <outlet property="startVideoButton" destination="X3k-2H-uKI" id="P69-Mp-aJK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dko-Xm-Ltf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="551"/>
+        </scene>
+        <!--PublishEventViewController-->
         <scene sceneID="uUP-ru-Y0f">
             <objects>
-                <viewController id="RTm-vU-3Wq" customClass="PublishEventViewController" customModule="ConferenceStreaming" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PublishEventVC" id="RTm-vU-3Wq" userLabel="PublishEventViewController" customClass="PublishEventViewController" customModule="ConferenceStreaming" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Xj-kC-ZQm"/>
                         <viewControllerLayoutGuide type="bottom" id="yBF-NI-GWJ"/>
@@ -51,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGr-gQ-pfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="483"/>
+            <point key="canvasLocation" x="880" y="495"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Z1K-M4-dFY">
@@ -64,7 +99,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="8Kp-01-gkG" kind="relationship" relationship="viewControllers" id="ktR-dR-Ygv"/>
-                        <segue destination="RTm-vU-3Wq" kind="relationship" relationship="viewControllers" id="wbd-cg-c9d"/>
+                        <segue destination="9D4-tb-obs" kind="relationship" relationship="viewControllers" id="zqN-z0-CBL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPK-1i-uFK" userLabel="First Responder" sceneMemberID="firstResponder"/>

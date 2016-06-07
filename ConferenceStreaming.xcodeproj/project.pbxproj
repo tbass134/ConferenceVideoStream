@@ -30,6 +30,10 @@
 		56F1160C1D05F54000E0A319 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F1160B1D05F54000E0A319 /* GLKit.framework */; };
 		56F1160E1D05F54A00E0A319 /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F1160D1D05F54A00E0A319 /* libiconv.2.tbd */; };
 		56F116101D05F76600E0A319 /* libgll.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F1160F1D05F76600E0A319 /* libgll.tbd */; };
+		56F116121D05FFC400E0A319 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F116111D05FFC400E0A319 /* libstdc++.6.0.9.tbd */; };
+		56F116141D05FFD000E0A319 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F116131D05FFD000E0A319 /* libiconv.2.4.0.tbd */; };
+		56F116161D06030F00E0A319 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F116151D06030F00E0A319 /* VideoViewController.swift */; };
+		56F116181D060B3500E0A319 /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F116171D060B3500E0A319 /* SubscribeViewController.swift */; };
 		867FE2D2738BEDFBD66E0065 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B96237958E2E1DCDFCFC28 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +65,10 @@
 		56F1160B1D05F54000E0A319 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		56F1160D1D05F54A00E0A319 /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
 		56F1160F1D05F76600E0A319 /* libgll.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libgll.tbd; path = usr/lib/libgll.tbd; sourceTree = SDKROOT; };
+		56F116111D05FFC400E0A319 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		56F116131D05FFD000E0A319 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		56F116151D06030F00E0A319 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoViewController.swift; path = ViewControllers/VideoViewController.swift; sourceTree = "<group>"; };
+		56F116171D060B3500E0A319 /* SubscribeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeViewController.swift; path = ViewControllers/SubscribeViewController.swift; sourceTree = "<group>"; };
 		802BF4F33DE583C16DD6F35D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8E052AFB53C6D48A4B8B35C6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A5B96237958E2E1DCDFCFC28 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F116141D05FFD000E0A319 /* libiconv.2.4.0.tbd in Frameworks */,
+				56F116121D05FFC400E0A319 /* libstdc++.6.0.9.tbd in Frameworks */,
 				56F116101D05F76600E0A319 /* libgll.tbd in Frameworks */,
 				56F1160E1D05F54A00E0A319 /* libiconv.2.tbd in Frameworks */,
 				56F1160C1D05F54000E0A319 /* GLKit.framework in Frameworks */,
@@ -95,6 +105,8 @@
 		4AED5FD49DF4500CB565326F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56F116131D05FFD000E0A319 /* libiconv.2.4.0.tbd */,
+				56F116111D05FFC400E0A319 /* libstdc++.6.0.9.tbd */,
 				56F1160F1D05F76600E0A319 /* libgll.tbd */,
 				56F1160D1D05F54A00E0A319 /* libiconv.2.tbd */,
 				56F1160B1D05F54000E0A319 /* GLKit.framework */,
@@ -171,6 +183,8 @@
 			children = (
 				56F116071D05EE7900E0A319 /* EventsTableViewController.swift */,
 				56F116091D05F0A200E0A319 /* PublishEventViewController.swift */,
+				56F116151D06030F00E0A319 /* VideoViewController.swift */,
+				56F116171D060B3500E0A319 /* SubscribeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -308,6 +322,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				56F1160A1D05F0A200E0A319 /* PublishEventViewController.swift in Sources */,
+				56F116181D060B3500E0A319 /* SubscribeViewController.swift in Sources */,
+				56F116161D06030F00E0A319 /* VideoViewController.swift in Sources */,
 				568723841CDCF74600F5564F /* ViewController.swift in Sources */,
 				568723821CDCF74600F5564F /* AppDelegate.swift in Sources */,
 				56F115EF1D05E99400E0A319 /* NSDate+SAMAdditions.m in Sources */,

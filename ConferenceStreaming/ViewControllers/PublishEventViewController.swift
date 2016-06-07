@@ -23,7 +23,6 @@ class PublishEventViewController: R5VideoViewController, R5StreamDelegate {
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.preview()
         super.viewDidAppear(animated)
     }
     
@@ -37,6 +36,8 @@ class PublishEventViewController: R5VideoViewController, R5StreamDelegate {
         let cameras = AVCaptureDevice.devicesWithMediaType(AVMediaTypeVideo)
         let cameraDevice:AVCaptureDevice = cameras.last as! AVCaptureDevice
         let camera = R5Camera(device: cameraDevice, andBitRate: 512)
+        camera.orientation = 90
+        
         
         let audioDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeAudio)
         let mic = R5Microphone(device: audioDevice)
@@ -50,9 +51,10 @@ class PublishEventViewController: R5VideoViewController, R5StreamDelegate {
         self.showPreview(true)
     }
     
-    func start() {
+    func start(name:String? = red5prostream) {
+        self.preview()
         self.showPreview(false)
-        stream?.publish("red5prostream", type: R5RecordTypeLive)
+        stream?.publish(name, type: R5RecordTypeLive)
     }
 
     func stop() {
